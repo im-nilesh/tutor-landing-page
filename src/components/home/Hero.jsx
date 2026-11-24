@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { ArrowRight, BadgeCheck, BookOpen, CalendarDays, GraduationCap, Layers, Search, Sparkles, Video } from "lucide-react";
 import { stats } from "../../data/content";
 
@@ -22,7 +23,7 @@ export default function Hero() {
         <p className="hero-description">Connect with verified and experienced tutors, explore their profiles, check subjects, schedules, and book classes easily — all in one platform.</p>
         <div className="hero-buttons">
           <a className="btn btn-primary btn-hero" href="#tutors"><Search size={19} /> Find a Tutor <ArrowRight size={17} /></a>
-          <a className="btn btn-glass btn-hero" href="#for-tutors"><GraduationCap size={20} /> Become a Tutor</a>
+          <Link className="btn btn-glass btn-hero" to="/become-a-tutor"><GraduationCap size={20} /> Become a Tutor</Link>
         </div>
         <div className="stats">
           {stats.map(([Icon, n, l]) => <div key={l}><Icon /><strong>{n}</strong><span>{l}</span></div>)}

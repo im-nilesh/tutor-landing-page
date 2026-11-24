@@ -174,7 +174,7 @@ export default function Tutors({ notify }) {
               </p>
             </div>
 
-            <Link className="btn btn-light" to="/#for-tutors">
+            <Link className="btn btn-light" to="/become-a-tutor">
               Become a Tutor
               <ArrowRight size={17} />
             </Link>
